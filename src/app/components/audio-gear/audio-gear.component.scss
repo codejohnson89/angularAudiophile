@@ -1,0 +1,73 @@
+.audioGear {
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+  max-width: 1110px;
+  min-height: 588px;
+  margin: 0 auto 96px;
+
+  .textContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 445px;
+    gap: 2rem;
+
+    h2 {
+      .orange {
+        color: #d87d4a;
+      }
+    }
+    p {
+      color: #000;
+      font-family: Manrope;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; /* 166.667% */
+      opacity: 0.6;
+    }
+  }
+
+  .image {
+    background-image: url("../../../../public/assets/shared/desktop/image-best-gear.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 540px;
+  }
+
+  @media only screen and (max-width: 1025px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 63px;
+
+    .image {
+      min-height: 300px;
+      min-width: 690px;
+      background-image: url("../../../../public/assets/shared/tablet/t-image-best-gear.jpg");
+    }
+
+    .textContainer {
+      max-width: 573px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    gap: 40px;
+    .image {
+      background-image: url("../../../../public/assets/shared/mobile/m-image-best-gear.jpg");
+      min-width: 327px;
+    }
+
+    .textContainer {
+      max-width: 327px;
+
+      h2 {
+        text-align: center;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

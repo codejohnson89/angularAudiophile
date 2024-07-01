@@ -1,0 +1,180 @@
+.productTiles {
+  min-height: 1300px;
+  max-width: 1110px;
+  margin: 0 auto 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+
+  @media only screen and (max-width: 1025px) {
+      padding: 0 20px;
+      margin-bottom: 120px;
+  }
+
+  .product-speaker-zx9 {
+      min-height: 560px;
+      min-width: 1110px;
+      background-color: #D87D4A;
+      background-image: url('../../../../public/assets/home/desktop/pattern-circles.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -13em -2em;
+      border-radius: 8px;
+      display: flex;
+      gap: 138px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+
+      .textContainer {
+          max-width: 350px;
+          h1, p {
+              color: #fff;
+          }
+
+          p {
+              margin: 24px 0 40px;
+          }
+
+          .btn {
+              max-width: 160px;
+              height: 48px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 0px;
+          }
+      }
+
+      .imageContainer {
+          position: relative;
+          top: 3.8em;
+      }
+
+      @media only screen and (max-width: 1025px) {
+          min-width: 0;
+          flex-direction: column;
+          width: 100%;
+          padding: 52px 0 64px;
+          gap: 64px;
+
+          .imageContainer {
+              position: unset;
+              max-width: 197px;
+          }
+
+          .textContainer {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+          }
+      }
+  }
+
+  .product-speaker-zx7 {
+      min-height: 320px;
+      min-width: 100%;
+      background-image: url('../../../../public/assets/home/desktop/image-speaker-zx7.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      .textContainer {
+          max-width: 204px;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          position: relative;
+          left: 98px;
+          .btn {
+              max-width: 160px;
+              height: 48px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 0px;
+              background-color: transparent;
+              color: #000;
+              border-color: #000;
+          }
+      }
+
+      @media only screen and (max-width: 1025px) {
+          background-image: url('../../../../public/assets/home/tablet/t-image-speaker-zx7.jpg');
+      }
+      @media only screen and (max-width: 768px) {
+          background-image: url('../../../../public/assets/home/mobile/m-image-speaker-zx7.jpg');
+      }
+  }
+
+  .product-earphones-yx1 {
+      min-width: 100%;
+      min-height: 320px;
+      display: flex;
+      justify-content: space-between;
+
+      .image {
+          background-image: url('../../../../public/assets/home/desktop/image-earphones-yx1.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+      .tile {
+          min-width: 540px;
+          display: flex;
+          border-radius: 8px;
+          background-color: #F1F1F1;
+
+          .textContainer {
+              max-width: 247px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 32px;
+              position: relative;
+              left: 98px;
+              .btn {
+                  max-width: 160px;
+                  height: 48px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 0px;
+                  background-color: transparent;
+                  color: #000;
+                  border-color: #000;
+              }
+          }
+      }
+
+      @media only screen and (max-width: 1025px) {
+          gap: 10px;
+          .image {
+              background-image: url('../../../../public/assets/home/tablet/t-image-earphones-yx1.jpg');
+          }
+          .tile {
+              min-width: 50%;
+              justify-content: center;
+
+              .textContainer {
+                  position: unset;
+              }
+          }
+      }
+
+      @media only screen and (max-width: 768px) {
+          flex-direction: column;
+          .image {
+              background-image: url('../../../../public/assets/home/mobile/m-image-earphones-yx1.jpg');
+          }
+
+          .tile {
+              height: 200px;
+          }
+      }
+  }
+}

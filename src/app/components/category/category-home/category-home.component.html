@@ -1,0 +1,11 @@
+<section class="tilesContainer">
+  @for (tile of tileData; track tile.id) {
+  <div class="tile">
+    <img src="{{ tile.img }}" width="122" height="160" alt="product image" />
+    <div class="textContainer">
+      <h6 class="heading-h6">{{ tile.text }}</h6>
+      <p class="heading-overline"><a routerLink="{{ tile.link }}">Shop</a></p>
+    </div>
+  </div>
+  }
+</section>

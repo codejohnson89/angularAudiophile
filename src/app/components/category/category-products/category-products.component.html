@@ -1,0 +1,14 @@
+<ul>
+  @for (product of products; track product.id) {
+    <div class="product">
+      <div class="imageContainer">
+          <img src="{{product.image.desktop}}" width='350' height='386' alt="product image"/>
+      </div>
+      <div class="textContainer">
+          <h2 class="heading-h2">{{ product.name }}</h2>
+          <p>{{ product.description }}</p>
+          <a routerLink="['product', 'id']" class="btn -custom btn-custom-orange" text="see product">see product</a>
+      </div>
+    </div>
+  }
+</ul>

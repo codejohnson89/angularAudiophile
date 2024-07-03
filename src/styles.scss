@@ -65,6 +65,14 @@ $lightGrey: #fafafa;
       letter-spacing: 1px;
   }
 }
+.btn {
+  min-width: 168px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+}
 
 .btn-custom {
   font-weight: 700;
